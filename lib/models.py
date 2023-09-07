@@ -12,10 +12,10 @@ class User (Base):
     id = Column (Integer(), primary_key=True)
     name = Column (String())
 
-    transactions = relationship('Transaction' , backref='user')
+    transactions = relationship('Transaction' , backref='User')
 
-    def __repr__(self):
-        return f"{self.id} {self.name}"
+    # def __repr__(self):
+    #     return f"{self.id} {self.name}"
 
 class Transaction(Base):
     __tablename__ = 'transactions'

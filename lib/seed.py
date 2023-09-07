@@ -20,7 +20,21 @@ if __name__ == '__main__':
     new_user = User(name='John Doe')
     new_transaction = Transaction(amount=100, user=new_user)
 
-    # session.add(new_user)
-    # session.add(new_transaction)
+    first_user = User(name='Ian Odhiambo')
+    first_transaction = Transaction(amount=250,user=first_user)
 
-    # session.commit()
+    second_user = User ( name = 'Rob Tom')
+    second_transaction = Transaction(amount=300,user=second_user)
+
+
+    session.add(new_user)
+    session.add(new_transaction)
+
+    session.add(first_user)
+    session.add(first_transaction)
+
+    session.add(second_user)
+    session.add(second_transaction)
+
+
+    session.commit()

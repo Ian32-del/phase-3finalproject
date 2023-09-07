@@ -1,1 +1,40 @@
 Generic single-database configuration.
+# Project Name : Transaction
+
+Brief project description here.
+
+# AUTHOR: Ian Odhiambo DATE:7th SEPTEMBER PROJECT
+
+## Project: Description
+
+This is a application that manages cutomers.  A customer can put a transaction in it that will be saved for later use . You can also search for customers that have been created on the program using different methods. Any customer can  be passed into it.
+
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Database Setup](#database-setup)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+Provide a brief introduction to your project, explaining its purpose and any relevant background information.
+
+## Prerequisites
+
+List any prerequisites or dependencies that users need to have installed before they can use your project. Include any specific versions if necessary.
+
+- Python 3.x
+- SQLAlchemy
+- Faker (for generating fake data)
+
+## Installation
+
+Explain how to install and set up your project. Include any necessary steps, such as installing Python packages or setting up a virtual environment.
+
+```bash
+pip install -r requirements.txt
