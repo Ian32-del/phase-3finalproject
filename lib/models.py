@@ -14,12 +14,16 @@ class User (Base):
 
     transactions = relationship('Transaction' , backref='user')
 
+    def __repr__(self):
+        return f"{self.id} {self.name}"
+
 class Transaction(Base):
     __tablename__ = 'transactions'
 
     id = Column(Integer() , primary_key=True)
     amount = Column (Integer())
     user_id = Column(Integer() , ForeignKey('users.id'))
+
 
 
 # engine = create_engine ('sqlite:///transaction.db')
